@@ -11,31 +11,45 @@
     
 </head>
 <body>
-    <!-- <img id="banner" src="Planner.jpg"> -->
-    <div class="header">
-    </div>
     <form class="form-detail">
-        <h1>Build Your Meal Plan</h1>
+        <img id="banner" src="Planner.jpg">
+        <p>◈ ━━━━━━━━━━━━━━━━━━━ ⸙ ━━━━━━━━━━━━━━━━━━━ ◈</p>
+        <h2>Personal Information</h2>
         <div class="form-row">
-            <label for="breakfast">Breakfast:</label>
-            <input type="text" name="breakfast" id="breakfast" class="input-text" placeholder="ex: French Toast">
+            <label for="name">Name:</label>
+            <input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Sarah" required>
         </div>
         <div class="form-row">
-            <label for="snack-1">Snack:</label>
-            <input type="text" name="snack-1" id="snack-1" class="input-text" placeholder="ex: Apple">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" class="input-text" placeholder="ex: user@email.com" required>
+        </div>
+        <div class="form-row">
+            <label for="goal">Goal For The Week:</label>
+            <textarea id="goal" rows="1" placeholder="Goals go here." required></textarea>
+        </div>
+        <h2>Meals</h2>
+        <div class="form-row">
+            <label for="breakfast">Breakfast:</label>
+            <input type="text" name="breakfast" id="breakfast" class="input-text" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">First Snack:</label>
+            <input type="text" name="snack-1" id="snack-1" class="input-text" placeholder="ex: Apple" required>
         </div>
         <div class="form-row">
             <label for="lunch">Lunch:</label>
-            <input type="text" name="lunch" id="lunch" class="input-text" placeholder="ex: Salad">
+            <input type="text" name="lunch" id="lunch" class="input-text" placeholder="ex: Salad" required>
         </div>
         <div class="form-row">
-            <label for="snack-2">Snack:</label>
-            <input type="text" name="snack-2" id="snack-2" class="input-text" placeholder="ex: Trail Mix">
+            <label for="snack-2">Second Snack:</label>
+            <input type="text" name="snack-2" id="snack-2" class="input-text" placeholder="ex: Trail Mix" required>
         </div>
         <div>
             <label for="dinner">Dinner:</label>
-            <input type="text" name="dinner" id="dinner" class="input-text" placeholder="ex: Lasagna">
+            <input type="text" name="dinner" id="dinner" class="input-text" placeholder="ex: Lasagna" required>
         </div>
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        <button type="button" onclick="clearForm()">Reset Planner</button>
     </form>
 </body>
 </html>
