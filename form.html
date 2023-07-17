@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WEB-115 Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+    <script src="projectJS.js" defer></script>
+    
+</head>
+<body>
+    <div class="logo">
+        <a href="finalProject.html"><img src="1.png"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="form.html"><b>Meal Plan Form</b></a></li>
+            <li><a href="finalProject.html"><b>About Us</b></a></li>
+        </ul>
+    </nav>
+    <form class="form-detail" id="mealplan">
+        <p>◈ ━━━━━━━━━━━━━━━━━━━ ⸙ ━━━━━━━━━━━━━━━━━━━ ◈</p>
+        <h2>Personal Information</h2>
+        <div class="form-row">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="ex: Sarah" required>
+        </div>
+        <div class="form-row">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" placeholder="ex: user@email.com" required>
+        </div>
+        <div class="form-row">
+            <label for="goal">Goal For The Week:</label><br>
+            <textarea id="goal" rows="1" placeholder="Goals go here." required></textarea>
+        </div>
+        <h2>Meals</h2>
+        <div class="form-row">
+            <label for="breakfast">Breakfast:</label><br>
+            <input type="text" id="breakfast" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">First Snack:</label><br>
+            <input type="text" id="snack-1" placeholder="ex: Apple" required>
+        </div>
+        <div class="form-row">
+            <label for="lunch">Lunch:</label><br>
+            <input type="text" id="lunch" placeholder="ex: Salad" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-2">Second Snack:</label><br>
+            <input type="text" id="snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Dinner:</label><br>
+            <input type="text" id="dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        <button type="button" onclick="clearForm()">Reset Planner</button>
+    </form>
+</body>
+</html>
