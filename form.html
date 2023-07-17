@@ -21,43 +21,190 @@
         </ul>
     </nav>
     <form class="form-detail" id="mealplan">
+        <h1>Personal Information</h1>
         <p>◈ ━━━━━━━━━━━━━━━━━━━ ⸙ ━━━━━━━━━━━━━━━━━━━ ◈</p>
-        <h2>Personal Information</h2>
+        <div class="formcontainer">
         <div class="form-row">
             <label for="name">Name:</label><br>
             <input type="text" id="name" placeholder="ex: Sarah" required>
-        </div>
+            </div>
         <div class="form-row">
             <label for="email">Email:</label><br>
             <input type="text" id="email" placeholder="ex: user@email.com" required>
         </div>
         <div class="form-row">
             <label for="goal">Goal For The Week:</label><br>
-            <textarea id="goal" rows="1" placeholder="Goals go here." required></textarea>
+            <textarea id="goal" rows="4" placeholder="Goals go here." required></textarea>
         </div>
-        <h2>Meals</h2>
-        <div class="form-row">
-            <label for="breakfast">Breakfast:</label><br>
-            <input type="text" id="breakfast" placeholder="ex: French Toast" required>
         </div>
+        <h1>Meals</h1>
+        <p>◈ ━━━━━━━━━━━━━━━━━━━ ⸙ ━━━━━━━━━━━━━━━━━━━ ◈</p>
+        <div class="formcontainer">
+        <!--Monday-->
         <div class="form-row">
-            <label for="snack-1">First Snack:</label><br>
-            <input type="text" id="snack-1" placeholder="ex: Apple" required>
-        </div>
-        <div class="form-row">
-            <label for="lunch">Lunch:</label><br>
-            <input type="text" id="lunch" placeholder="ex: Salad" required>
+            <label for="breakfast">Monday Breakfast:</label>
+            <input type="text" id="m-breakfast" placeholder="ex: French Toast" required>
         </div>
         <div class="form-row">
-            <label for="snack-2">Second Snack:</label><br>
-            <input type="text" id="snack-2" placeholder="ex: Trail Mix" required>
+            <label for="snack-1">Monday Snack 1:</label>
+            <input type="text" id="m-snack-1" placeholder="ex: Apple" required>
         </div>
         <div class="form-row">
-            <label for="dinner">Dinner:</label><br>
-            <input type="text" id="dinner" placeholder="ex: Lasagna" required>
+            <label for="lunch">Monday Lunch:</label>
+            <input type="text" id="m-lunch" placeholder="ex: Salad" required>
         </div>
-        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
-        <button type="button" onclick="clearForm()">Reset Planner</button>
+        <div class="form-row">
+            <label for="snack-2">Monday Snack 2:</label>
+            <input type="text" id="m-snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Monday Dinner:</label>
+            <input type="text" id="m-dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <!--Tuesday-->
+        <div class="form-row">
+            <br>
+            <br>
+            <p>━━━━━━━━━━━━━━━━━━━━━༻❁༺━━━━━━━━━━━━━━━━━━━━━</p>
+            <label for="breakfast">Tuesday Breakfast:</label>
+            <input type="text" id="t-breakfast" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">Tuesday Snack 1:</label>
+            <input type="text" id="t-snack-1" placeholder="ex: Apple" required>
+        </div>
+        <div class="form-row">
+            <label for="lunch">Tuesday Lunch:</label>
+            <input type="text" id="t-lunch" placeholder="ex: Salad" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-2">Tuesday Snack 2:</label>
+            <input type="text" id="t-snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Tuesday Dinner:</label>
+            <input type="text" id="t-dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <div class="form-row">
+            <br>
+            <br>
+            <p>━━━━━━━━━━━━━━━━━━━━━༻❁༺━━━━━━━━━━━━━━━━━━━━━</p>
+            <label for="breakfast">Wednesday Breakfast:</label>
+            <input type="text" id="w-breakfast" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">Wednesday Snack 1:</label>
+            <input type="text" id="w-snack-1" placeholder="ex: Apple" required>
+        </div>
+        <div class="form-row">
+            <label for="lunch">Wednesday Lunch:</label>
+            <input type="text" id="w-lunch" placeholder="ex: Salad" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-2">Wednesday Snack 2:</label>
+            <input type="text" id="w-snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Wednesday Dinner:</label>
+            <input type="text" id="w-dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <div class="form-row">
+            <br>
+            <br>
+            <p>━━━━━━━━━━━━━━━━━━━━━༻❁༺━━━━━━━━━━━━━━━━━━━━━</p>
+            <label for="breakfast">Thursday Breakfast:</label>
+            <input type="text" id="th-breakfast" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">Thursday Snack 1:</label>
+            <input type="text" id="th-snack-1" placeholder="ex: Apple" required>
+        </div>
+        <div class="form-row">
+            <label for="lunch">Thursday Lunch:</label>
+            <input type="text" id="th-lunch" placeholder="ex: Salad" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-2">Thursday Snack 2:</label>
+            <input type="text" id="th-snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Thursday Dinner:</label>
+            <input type="text" id="th-dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <div class="form-row">
+            <br>
+            <br>
+            <p>━━━━━━━━━━━━━━━━━━━━━༻❁༺━━━━━━━━━━━━━━━━━━━━━</p>
+            <label for="breakfast">Friday Breakfast:</label>
+            <input type="text" id="f-breakfast" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">Friday Snack 1:</label>
+            <input type="text" id="f-snack-1" placeholder="ex: Apple" required>
+        </div>
+        <div class="form-row">
+            <label for="lunch">Friday Lunch:</label>
+            <input type="text" id="f-lunch" placeholder="ex: Salad" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-2">Friday Snack 2:</label>
+            <input type="text" id="f-snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Friday Dinner:</label>
+            <input type="text" id="f-dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <div class="form-row">
+            <br>
+            <br>
+            <p>━━━━━━━━━━━━━━━━━━━━━༻❁༺━━━━━━━━━━━━━━━━━━━━━</p>
+            <label for="breakfast">Saturday Breakfast:</label>
+            <input type="text" id="s-breakfast" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">Saturday Snack 1:</label>
+            <input type="text" id="s-snack-1" placeholder="ex: Apple" required>
+        </div>
+        <div class="form-row">
+            <label for="lunch">Saturday Lunch:</label>
+            <input type="text" id="s-lunch" placeholder="ex: Salad" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-2">Saturday Snack 2:</label>
+            <input type="text" id="s-snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Saturday Dinner:</label>
+            <input type="text" id="s-dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <div class="form-row">
+            <br>
+            <br>
+            <p>━━━━━━━━━━━━━━━━━━━━━༻❁༺━━━━━━━━━━━━━━━━━━━━━</p>
+            <label for="breakfast">Sunday Breakfast:</label>
+            <input type="text" id="su-breakfast" placeholder="ex: French Toast" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-1">Sunday Snack 1:</label>
+            <input type="text" id="su-snack-1" placeholder="ex: Apple" required>
+        </div>
+        <div class="form-row">
+            <label for="lunch">Sunday Lunch:</label>
+            <input type="text" id="su-lunch" placeholder="ex: Salad" required>
+        </div>
+        <div class="form-row">
+            <label for="snack-2">Sunday Snack 2:</label>
+            <input type="text" id="su-snack-2" placeholder="ex: Trail Mix" required>
+        </div>
+        <div class="form-row">
+            <label for="dinner">Sunday Dinner:</label>
+            <input type="text" id="su-dinner" placeholder="ex: Lasagna" required>
+        </div>
+        <div class="btn">
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+            <button type="button" onclick="clearForm()">Reset Planner</button>
+        </div>
+        </div>
     </form>
 </body>
 </html>
